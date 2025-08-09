@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Web Pages with JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Interactive Web Page </h1>
+
+    <!-- Part 1: Event Handling -->
+    <section>
+        <h2>Event Handling</h2>
+        <button id="show-msg-btn">Click Me!</button>
+        <p id="message" style="display:none;"> You clicked the button!</p>
+    </section>
+
+    <!--Part 2: Interactive Elements -->
+    <section>
+        <h2>Light/Dark Mode</h2>
+        <button id="theme-toggle">Toggle Theme</button>
+    </section>
+
+    <section>
+        <h2>Counter Game</h2>
+        <p>Count: <span id="counter">0</span></p>
+        <button id="increase-btn">Increase</button>
+        <button id="reset-btn">Reset</button>
+    </section>
+
+    <!-- Part 3: Form Validation -->
+    <section>
+        <h2>Sign Up Form</h2>
+        <form id="signup-form">
+            <label>Name:</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <small class="error" id="name-error"></small>
+
+            <label>Email:</label>
+            <input type="text" id="email" placeholder="Enter your email">
+            <small class="error" id="email-error"></small>
+
+            <label>Password:</label>
+            <input type="password" id="password" placeholder="Enter your password">
+            <small class="error" id="password-error"></small>
+
+            <button type="submit">Sign Up</button>
+            <p id="form-success" style="color:green;"></p>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
